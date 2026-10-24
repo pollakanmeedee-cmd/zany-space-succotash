@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: panda-bot
+    runtime: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: python bot_full.py
+    envVars:
+      - key: DISCORD_TOKEN
+        sync: false
